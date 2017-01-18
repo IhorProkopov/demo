@@ -27,7 +27,7 @@ public class CRUDController {
         repository.save(value);
     }
 
-    @RequestMapping("/delete")
+    @RequestMapping("/delete", method = RequestMethod.DELETE)
     public void delete(@RequestParam("id") int id){
         repository.delete(id);
     }
